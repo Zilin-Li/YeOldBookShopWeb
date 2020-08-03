@@ -1,0 +1,144 @@
+<!--Enquiry form--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Enquiry</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+	<header>
+		<p id="logo">YeOld Bookshop</p>  
+		<form action="featured-author-book.html">
+			<input class="search-bar" type="text" value="">
+			<input class="search-bottom" type="submit" value="Search">
+		 </form>			
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about-us.html">About Us</a></li>
+			<li><a href="featured-author-book.html">Featured Author/Book</a></li>
+			<li><a href="restorations.html">Restorations</a></li>
+			<li><a href="valuation.html">Valuation</a></li>
+			<li class="selected"><a href="enquiry.html">Enquiry</a></li>
+		</ul>
+	</nav>
+	
+	<div class="content">
+		<aside class="new-aside">
+			<h2>New Arrivals</h2>
+				<div>
+					<img src="images/to_kill_a_mockingbird.jpg" alt="To Kill a Mockingbird">
+					<p><a href="book-instruction.html">To Kill a Mockingbird</a></p>
+				</div>
+				
+				<div>
+					<img src="images/alice_in_wonderland.jpg" alt="Alice in Wonderland">
+					<p><a href="book-instruction.html">Alice in Wonderland</a></p>
+				</div>
+					
+			<h3 id="view-more"><a href="new-arrivals.html">View more</a></h3>			
+		</aside>
+		
+		<div class="enquiry">
+			<h1>Enquiry</h1>
+			<p>To get our service, Please fill in the information enquiry form, we promise to contact you as soon as possible. </p>
+			
+			<form>
+				<label for="name">Name: <span class="required">*</span></label><br>
+				<input type="text" id = "name" required><br>
+	
+				<label for="address">Address:<span class="required">*</span></label><br>
+				<input type="text" id = "address" required><br>
+				
+				<label  for="phone">Phone:<span class="required">*</span></label><br>
+				<input type="text" id = "phone" required><br>
+				
+				<label  for="email">Email:<span class="required">*</span></label><br>
+				<input type="email" id = "email" required><br>
+				
+				<label >Please contact me by:</label>
+				 
+					<input type="radio" name="contact" id="phone1" value="Phone">
+					<label for="phone1" >Phone</label>
+				
+					<input type="radio" name="contact" id="email1" value="Email">
+					<label for="email1">Email</label><br>
+					
+				 
+		   
+			 
+			  <label>Attributes:</label><br>
+			  <select>		
+					<option selected disabled>Select...</option>
+					<option  value="first edition">First Edition</option>
+					<option  value="signed">Signed</option>
+					<option  value="duts">Dust Jacket</option>
+			  </select><br>
+			  
+			  <label for="title">Title:<span class="required">*</span></label><br>
+			  <input type="text" id="title" required><br>
+			  
+			  <label>Published Year<span class="required">*</span></label><br>
+			  <input type="date" required><br>
+			  
+			  <label>Cover Materials:</label><br>
+				
+				<select>		
+					<option selected disabled>Select...</option>
+					<option id="leathe" value="leathe">Leathe</option>
+					<option id="cloth" value="cloth">Cloth</option>
+					<option id="paper" value="paper">Paper</option>
+					<option id="parchment" value="parchment">parchment</option>
+					<option id="other" value="other">Other materials</option>
+			  </select><br>
+			
+			  <label>Approximate size of book:</label><br>
+			  <input type="text" id="size"><br>
+				
+			  <label>Additional Comments:</label><br>
+				<textarea id="message" rows="8" cols="50"></textarea>
+				<br>
+				
+				<input type="submit" id="submit" value="Submit"> <br>
+			
+			
+			</form>
+		
+		</div>
+		
+		<div class="featured-aside">
+			<h2>Featured Book</h2>
+			<img src="images/to_kill_a_mockingbird.jpg" alt="To Kill a Mockingbird">
+			<p><span id="italic-bold">To Kill a Mockingbird</span> is Harper Lee’s 1961 Pulitzer Prize-winning novel about a child’s view of race and justice in the Depression-era South. </p>
+			<h3><a href="featured-author-book.html">Learn more...</a></h3>
+		</div>
+		
+		<div class="contact-us">
+			<div class="location">
+				<p>Location information:</p>
+				<p>119 Colombo Street,Sydenham,Christchurch 8023</p>
+			</div>
+			<div class="email-phone-time">
+				<P>Email address: <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">enquire@yeoldbookshop</a></p>
+				<P>Phone number: 03 – 3648833</p>
+				<p>Open time: 9am-5pm, 7 days a week.</p>	
+			</div>
+			<div class="share-link">
+				<a href="https://www.facebook.com/"><img class="logo" src="images/facebook.png" alt="Facebook logo"></a>
+				<a href="https://twitter.com/"><img class="logo" src="images/twitter.png" alt="Twitter logo"></a>
+				<a href="https://www.instagram.com/"><img class="logo" src="images/instagram.png" alt="Instagram logo"></a>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p>&copy; Copyright 2019 Strand Books All Rights Reserved / Privacy Policy</p>
+	</footer>
+	
+</body>
+</html>
